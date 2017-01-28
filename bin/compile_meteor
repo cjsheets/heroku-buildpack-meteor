@@ -48,7 +48,7 @@ fetch_meteor() {
 
 build() {
   (
-
+    head "Install npm dependencies,  v.01"
     (cd ../build/bundle/programs/server && npm install 2>&1 | indent)
     head "Building Meteor App Bundle"
     cd $APP_SOURCE
